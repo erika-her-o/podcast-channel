@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-brand {
+    width: 36px;
+    margin-top: 9px;
+    margin-left: 100px;
+}
+
+.desktop-menu {
+   display: flex;
+   place-content: space-between;
+   place-items: center;
+}
+  
+.desktop-menu ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 26px 100px;
+}
+
+.desktop-menu li {
+    margin-left: 48px;
+}
+
+.nav-menu-movil div a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+  
+#hamburger, #cancel-button {
+    display: none;
+}
+  
+.mobile-menu {
+    display: none;
+    place-content: space-between;
+    place-items: center;
+    margin: 16px 16px 32px;
+}
+
+.mobile-menu label {
+    cursor: pointer;
+}
+  
+.nav-menu-movil {
+    position: absolute;
+    right: 0;
+    width: 0;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+    background-color: rgb(0, 0, 236);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(6, 10, 36);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, p {
+    color: rgb(6, 10, 36);
+} 
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: 200px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, li, button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+a:hover {
+    color: rgb(0, 243, 187);
+    text-decoration: line-through;
+}
+
+a:active {
+    color: rgba(6,10,36,0.56);
+}
+
+#world {
+    text-decoration: line-through;
+}
+
+#dot {
+    color: rgb(0, 0, 236);
+}
+
+button {
+    background-color: rgb(0, 243, 187);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.welcome {
+    margin-top: 120px;
+    margin-left: 200px;
+}
+
+.welcome p {
+    max-width: 628px;
+}
+
+.welcome button {
+    margin: 56px auto 5px auto;
+    width: 226px;
+    height: 56px;
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, rgb(0, 0, 254) 0%, rgb(0, 240, 184) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.episodes-container {
+    position: relative;
+    top: 150px;
+}
+
+.episodes.diagonal-box {
+    height: 1042.6px;
+    width: 100%;
+    clip-path: polygon(0% 13.8%, 100% 0%, 100% 76%, 0% 89%);
+    background-image: linear-gradient(225deg, rgb(0, 0, 255) 0%, rgb(0, 0, 163) 100%);
+}
+
+.episodes h2 {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    padding-top: 35px;
+}
+
+.podcasts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.podcast-episode {
+    height: 153px;
+    width: 540px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+.us {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.us img {
+    display: flex;
+    width: 457.6px;
+    margin-top: -314px;
+}
+
+.us .text {
+    width: 464px;
+    margin-top: -115px;
+}
+
+.us .text h2 {
+    margin: 0;
+}
+
+.us .text p {
+    margin-top: 20px;
+}
+
+.interviews h2 {
+    margin-top: 64px;
+    margin-bottom: 36px;
+}
+
+.interviews {
+    display: block;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container-programmers {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.container-programmers img {
+    width: 33.3%;
+}
+
+.topics h2 {
+    margin-top: 64px;
+}
+
+.themes{
+    margin-top: 69px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.icon-box{
+    display: block;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon-box h3 {
+    width: 220px;
+    margin: 16px 0 34px;
+}
+
+.novelties.diagonal-box {
+    height: 530px;
+    background-image: linear-gradient(225deg, rgb(0, 0, 255) 0%, rgb(0, 0, 163) 100%);
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.novelties-container {
+    position: relative;
+    top: 200px;
+}
+
+.novelties h2 {
+    text-align: center;
+    margin: 0 auto 36px;
+    color: hsl(0, 0%, 100%);
+}
+
+.novelties button {
+    width: 345px;
+    height: 56px;
+    margin: 0 auto;
+    display: block;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    margin: 0px 100px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    cursor: initial;
+    overflow: hidden;
+}
+
+.social-media-img {
+    width: 16px;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.social-media-img:hover {
+    transform: rotate(360deg);
+    width: 25px;
+}
+
+@media screen and (max-width: 1125px) {
+    .podcasts {
+      display: flex;
+    }
+
+    .podcast-episode {
+        width: 420px;
+        margin: 16px auto 0;
+    }
+}
+
+@media screen and (max-width: 1087px){
+    .nav-brand, .welcome {
+        margin-left: 30px;
+    }
+    
+    .us {
+        display: flex;
+    }
+
+    .us img {
+        justify-content: center;
+        width: 360px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-left: 16px;
+        margin-bottom: 14px;
+    } 
+
+    .themes .icon-box {
+        margin: auto  100px;
+    }
+}
+
+@media screen and (max-width: 914px) {
+     .podcast-episode{
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .us .text {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .podcast-episode {
+        width: 320px;
+    }
+
+    .themes .icon-box {
+        margin: auto  35px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 320px) {
+    .us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin: 27px 16px;
+}
+
+@media screen and (max-width: 870px) {
+    .nav-brand {
+        width: 24px;
+        margin: 0;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+    
+    #hamburger:checked ~ .nav-menu-movil {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    #hamburger:checked ~ #cancel-button{
+        display: none;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .welcome, .episodes h2 {
+        margin-left: 16px;
+        margin-top: 0;
+    }
+
+    .welcome h1, .episodes h2 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .us img {
+        width: 303px;
+    }
+
+    .container-programmers img {
+        width: 50%;
+    }
+} 
+
+@media screen and (max-width: 810px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .podcast-episode {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 656px) and (max-width: 870px) {
+    .episodes.diagonal-box {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .welcome button {
+        width: 97%;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 36px;
+    }
+    
+    .podcast-episode {
+        width: 100%;
+        margin: 11px 0;
+    }
+
+    .episodes.diagonal-box {
+        height: 1204px;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .welcome p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .novelties button {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container-programmers img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-content {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 870px) {
+    .episodes.diagonal-box {
+        clip-path: polygon(0% 4%, 100% 1%, 100% 78%, 0% 85%);
+    }
+
+    .episodes-container {
+        top: 30px;
+    }
+
+    .episodes-container h2 {
+        font-size: 36px;
+    }
+
+    .icon-box h3 {
+        width: 280px;
+        margin: auto 0;
+    }
+
+    .novelties.diagonal-box {
+        height: 341px;
+        clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .novelties-container {
+        top: 66px;
+        margin: auto 16px;
+    }
+}
